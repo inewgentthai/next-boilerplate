@@ -48,7 +48,7 @@ export const Menu: NextPage<
           <section className="categories">
             <div className="container">
               <div className="categories-list row justify-content-center">
-                <div className="item capsule"><a href="#">All</a></div>
+                <div className="item capsule"><a href="#">Allsss</a></div>
                 <div className="item capsule active"><a href="#">Coffee</a></div>
                 <div className="item capsule"><a href="#">Tea</a></div>
                 <div className="item capsule"><a href="#">Non Coffee</a></div>
