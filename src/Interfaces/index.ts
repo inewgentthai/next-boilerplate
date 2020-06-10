@@ -3,6 +3,7 @@ export * from "@Interfaces/Pages/Home";
 export * from "@Interfaces/Pages/App";
 export * from "@Interfaces/Pages/Error";
 export * from "@Interfaces/Pages/Awesome";
+export * from "@Interfaces/Pages/Menu";
 // #endregion Page Interfaces
 
 // #region Redux Interfaces

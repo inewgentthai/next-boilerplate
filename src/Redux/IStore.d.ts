@@ -1,8 +1,9 @@
 // #region Interface Imports
-import { IHomePage, IAwesome } from "@Interfaces";
+import { IHomePage, IAwesome, IMenu } from "@Interfaces";
 // #endregion Interface Imports
 
 export interface IStore {
+    menu: IMenu.IStateProps;
     awesome: IAwesome.IStateProps;
     home: IHomePage.IStateProps;
 }
