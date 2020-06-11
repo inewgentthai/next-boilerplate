@@ -1,5 +1,7 @@
 declare namespace IItemList {
-    export interface IProps {}
+    export interface IProps {
+        menus: Array;
+    }
 }
 
 export { IItemList };

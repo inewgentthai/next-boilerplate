@@ -6,7 +6,7 @@ import * as React from "react";
 import { IItemList } from "./ItemList";
 // #endregion Local Imports
 
-const ItemList: React.FunctionComponent<IItemList.IProps> = (): JSX.Element => {
+const ItemList: React.FunctionComponent<IItemList.IProps> = (menus): JSX.Element => {
     return (
       <section className="item-list">
         <div className="container">
@@ -16,7 +16,10 @@ const ItemList: React.FunctionComponent<IItemList.IProps> = (): JSX.Element => {
                 <a href="#" data-toggle="modal" data-target="#itemModal" data-backdrop="static">
                   <div className="product-thumb">
                     <div className="product-size">L</div>
-                    <img src="static/truecoffee-ordering/images/product-coffee1.png" srcSet="static/truecoffee-ordering/images/product-coffee1.png 2x, static/truecoffee-ordering/images/product-coffee1.png 3x" className="product-thumb" />
+                    <img 
+                      src={ menus.menus.data[0].image_name }
+                      srcSet={ `${ menus.menus.data[0].image_name } 2x, ${ menus.menus.data[0].image_name } 3x` } 
+                      className="product-thumb" />
                   </div>
                   <div className="product-info">
                     <div className="product-type">Coffee</div>

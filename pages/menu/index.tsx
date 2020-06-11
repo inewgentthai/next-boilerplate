@@ -22,10 +22,10 @@ export const Menu: NextPage<
 > = ({ t, i18n }) => {
     const menu = useSelector((state: IStore) => state.menu);
     const dispatch = useDispatch();
-
+    
     return (
         <Layout title={ t("common:True Coffee Title") }>
-            <ItemList />
+            <ItemList menus={ menu }/>
         </Layout>
     );
 };
