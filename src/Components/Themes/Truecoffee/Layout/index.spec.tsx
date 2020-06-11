@@ -9,7 +9,7 @@ import { Layout } from "@Components/Themes/Truecoffee";
 
 describe("Layout", () => {
     it("should match snapshot", () => {
-        const { container } = render(<Layout>Test</Layout>);
+        const { container } = render(<Layout title='Test'>Test</Layout>);
 
         expect(container).toMatchSnapshot();
     });

@@ -5,6 +5,11 @@ import Head from 'next/head';
 
 // #region Local Imports
 import "./style.scss";
+import "@Static/truecoffee-ordering/css/bootstrap.css";
+import "@Static/truecoffee-ordering/css/bootstrap-reboot.css";
+import "@Static/truecoffee-ordering/css/slick.css";
+import "@Static/truecoffee-ordering/css/slick-theme.css";
+import "@Static/truecoffee-ordering/css/style.css";
 // #endregion Local Imports
 
 // #region Interface Imports
