@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should match snapshot 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="itemModal"
+    class="modal fade"
+    id="itemModal"
+    role="dialog"
+    tabindex="-1"
+  >
+    <div
+      class="item-modal modal-dialog"
+      role="document"
+    >
+      <div
+        class="modal-content"
+      >
+        <div
+          class="paper"
+        >
+          <div
+            class="product-thumb-box"
+          >
+            <div
+              aria-label="Close"
+              class="icn-close"
+              data-dismiss="modal"
+            />
+            <img
+              class="product-thumb"
+              src="static/truecoffee-ordering/images/product-coffee1.png"
+              srcset="static/truecoffee-ordering/images/product-coffee1.png 2x, static/truecoffee-ordering/images/product-coffee1.png 3x"
+            />
+          </div>
+          <div
+            class="product-info"
+          >
+            <div
+              class="product-type"
+            >
+              Coffee
+            </div>
+            <div
+              class="product-name"
+            >
+              Iced Cappuccino - M
+            </div>
+            <div
+              class="product-desc"
+            >
+              Our dark, rich espresso is combined with milk and served over ice. A perfect milk forward cool down.
+            </div>
+            <div
+              class="product-price"
+            >
+              ฿85
+            </div>
+            <div
+              class="product-quantity d-flex justify-content-center"
+            >
+              <a
+                class="icn-minus disable"
+              />
+              <input
+                class="form-control"
+                id="itemquantity"
+                max="99"
+                maxlength="2"
+                min="1"
+                type="tel"
+              />
+              <a
+                class="icn-plus"
+              />
+            </div>
+            <div
+              class="product-note d-flex justify-content-center"
+            >
+              <div
+                class="form-group text-center"
+              >
+                <label
+                  for="itemnote"
+                >
+                  Additional Information
+                </label>
+                <input
+                  class="form-control"
+                  id="itemnote"
+                  placeholder="เช่น ระดับความหวาน,น้ำแข็ง ฯลฯ"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="btn-set"
+          >
+            <button
+              class="btn btn-red btn-block"
+            >
+              Add item to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

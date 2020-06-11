@@ -4,12 +4,12 @@ import * as React from "react";
 
 // #region Local Imports
 import { render } from "@Test/utils";
-import { HorecaTheme } from "@Components/Themes";
+import { Modal } from "@Components/Themes/Truecoffee";
 // #endregion Local Imports
 
-describe("HorecaTheme", () => {
+describe("Modal", () => {
     it("should match snapshot", () => {
-        const { container } = render(<HorecaTheme>Test</HorecaTheme>);
+        const { container } = render(<Modal>Test</Modal>);
 
         expect(container).toMatchSnapshot();
     });

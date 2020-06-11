@@ -1,1 +1,0 @@
-export { HorecaTheme } from "./HorecaTheme";

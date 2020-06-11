@@ -8,11 +8,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { withTranslation } from "@Server/i18n";
 import { IStore } from "@Redux/IStore";
 import { MenuActions } from "@Actions";
-import { HorecaTheme } from "@Components/Themes";
+import { Layout } from "@Components/Themes/Truecoffee";
 // #endregion Local Imports
 
 // #region Interface Imports
 import { ReduxNextPageContext, IMenu } from "@Interfaces";
+import { ItemList } from "@Components";
 // #endregion Interface Imports
 
 export const Menu: NextPage<
@@ -23,7 +24,9 @@ export const Menu: NextPage<
     const dispatch = useDispatch();
 
     return (
-        <HorecaTheme></HorecaTheme>
+        <Layout title={ t("common:True Coffee Title") }>
+            <ItemList />
+        </Layout>
     );
 };
 
