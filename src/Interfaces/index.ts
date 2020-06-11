@@ -16,4 +16,8 @@ export * from "@Services/API/Http/Http";
 export * from "@Services/API/Planetary/ApodPayload";
 export * from "@Services/API/Planetary/ApodResponse";
 export * from "@Services/API/Planetary/Planetary";
+
+export * from "@Services/API/Menu/MenuPayload";
+export * from "@Services/API/Menu/MenuResponse";
+export * from "@Services/API/Menu/Menu";
 // #endregion Service Interfaces

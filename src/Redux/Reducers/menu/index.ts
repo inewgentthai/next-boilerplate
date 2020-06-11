@@ -6,7 +6,10 @@ import { ActionConsts } from "@Definitions";
 import { IAction, IMenu } from "@Interfaces";
 // #endregion Interface Imports
 
-const INITIAL_STATE: IMenu.IStateProps = { };
+const INITIAL_STATE: IMenu.IStateProps = { 
+    data: [],
+    loaded: false
+};
 
 type IMapPayload = IMenu.Actions.IMapPayload;
 

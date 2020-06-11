@@ -2,17 +2,30 @@
 import { WithTranslation } from "next-i18next";
 // #endregion Global Imports
 
-export declare module IMenu {
-    export interface IProps extends WithTranslation { }
+declare namespace IMenu {
+    export interface IProps extends WithTranslation {}
 
     export interface InitialProps {
         namespacesRequired: string[];
     }
 
-    export interface IStateProps { }
+    export interface IStateProps {
+        data: Array;
+        loaded: boolean;
+    }
 
-    module Actions {
-        export interface IMapPayload { }
-        export interface IMapResponse { }
+    namespace Actions {
+        export interface IMapPayload {}
+
+        export interface IMapResponse {}
+
+        export interface IGetMenuPayload extends MenuModel.GetMenuPayload {
+            params: {};
+        }
+
+        export interface IGetMenuResponse
+            extends MenuModel.GetMenuResponse {}
     }
 }
+
+export { IMenu };

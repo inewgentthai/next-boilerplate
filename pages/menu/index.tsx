@@ -33,7 +33,11 @@ export const Menu: NextPage<
 Menu.getInitialProps = async (
     ctx: ReduxNextPageContext
 ): Promise<IMenu.InitialProps> => {
-
+    await ctx.store.dispatch(
+        MenuActions.GetMenu({
+            params: { hd: true },
+        })
+    );
     return { namespacesRequired: ["common"] };
 };
 

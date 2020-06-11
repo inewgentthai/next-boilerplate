@@ -10,7 +10,7 @@ declare namespace IHomePage {
     }
 
     export interface IStateProps {
-        home: {
+        data: {
             version: number;
         };
         image: {

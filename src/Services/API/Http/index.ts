@@ -12,7 +12,7 @@ const {
     publicRuntimeConfig: { API_KEY, API_URL },
 } = getConfig();
 
-const BaseUrl = `${API_URL}/api`;
+const BaseUrl = `${API_URL}`;
 
 export const Http = {
     Request: async <A>(
@@ -25,7 +25,7 @@ export const Http = {
             const query = params
                 ? `?${stringify({ ...params, api_key: API_KEY })}`
                 : "";
-
+                
             fetch(`${BaseUrl}${url}${query}`, {
                 body: JSON.stringify(payload),
                 cache: "no-cache",

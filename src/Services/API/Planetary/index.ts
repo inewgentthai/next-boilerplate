@@ -20,7 +20,7 @@ export const PlanetaryService = {
             );
         } catch (error) {
             response = {
-                copyright: "",
+                copyright: "aaa",
                 date: "",
                 explanation: "",
                 hdurl: "",
