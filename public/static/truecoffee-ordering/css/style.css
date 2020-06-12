@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'ozone_bold';
-  src: url("../fonts/ozone_bold.eot");
-  src: url("../fonts/ozone_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ozone_bold.woff2") format("woff2"), url("../fonts/ozone_bold.woff") format("woff"), url("../fonts/ozone_bold.ttf") format("truetype"), url("../fonts/ozone_bold.svg#ozone_bold") format("svg");
+  src: url("/static/truecoffee-ordering/fonts/ozone_bold.eot");
+  src: url("/static/truecoffee-ordering/fonts/ozone_bold.eot?#iefix") format("embedded-opentype"), url("/static/truecoffee-ordering/fonts/ozone_bold.woff2") format("woff2"), url("/static/truecoffee-ordering/fonts/ozone_bold.woff") format("woff"), url("/static/truecoffee-ordering/fonts/ozone_bold.ttf") format("truetype"), url("/static/truecoffee-ordering/fonts/ozone_bold.svg#ozone_bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ozone_regular';
-  src: url("../fonts/ozone_regular.eot");
-  src: url("../fonts/ozone_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ozone_regular.woff2") format("woff2"), url("../fonts/ozone_regular.woff") format("woff"), url("../fonts/ozone_regular.ttf") format("truetype"), url("../fonts/ozone_regular.svg#ozone_regular") format("svg");
+  src: url("/static/truecoffee-ordering/fonts/ozone_regular.eot");
+  src: url("/static/truecoffee-ordering/fonts/ozone_regular.eot?#iefix") format("embedded-opentype"), url("/static/truecoffee-ordering/fonts/ozone_regular.woff2") format("woff2"), url("/static/truecoffee-ordering/fonts/ozone_regular.woff") format("woff"), url("/static/truecoffee-ordering/fonts/ozone_regular.ttf") format("truetype"), url("/static/truecoffee-ordering/fonts/ozone_regular.svg#ozone_regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ozone_medium';
-  src: url("../fonts/ozone_medium.eot");
-  src: url("../fonts/ozone_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ozone_medium.woff2") format("woff2"), url("../fonts/ozone_medium.woff") format("woff"), url("../fonts/ozone_medium.ttf") format("truetype"), url("../fonts/ozone_medium.svg#ozone_medium") format("svg");
+  src: url("/static/truecoffee-ordering/fonts/ozone_medium.eot");
+  src: url("/static/truecoffee-ordering/fonts/ozone_medium.eot?#iefix") format("embedded-opentype"), url("/static/truecoffee-ordering/fonts/ozone_medium.woff2") format("woff2"), url("/static/truecoffee-ordering/fonts/ozone_medium.woff") format("woff"), url("../fonts/ozone_medium.ttf") format("truetype"), url("/static/truecoffee-ordering/fonts/ozone_medium.svg#ozone_medium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -276,7 +276,7 @@ input[type=radio]:not(old) + label {
   display: inline-block;
   margin-left: -22px;
   padding-left: 28px;
-  background: url("../images/check-radio.svg");
+  background: url("/static/truecoffee-ordering/images/check-radio.svg");
   background-repeat: no-repeat;
 }
 
@@ -558,7 +558,7 @@ b {
   width: 100px;
   height: 121px;
   z-index: 9999;
-  background: url("../images/loading@3x.png") center no-repeat;
+  background: url("/static/truecoffee-ordering/images/loading@3x.png") center no-repeat;
   background-size: contain;
 }
 
@@ -579,7 +579,7 @@ b {
   width: 24px;
   height: 24px;
   margin-top: 6px;
-  background-image: url("../images/back.svg");
+  background-image: url("/static/truecoffee-ordering/images/back.svg");
 }
 
 .icn-back a {
@@ -592,7 +592,7 @@ b {
   width: 24px;
   height: 24px;
   margin-top: 6px;
-  background-image: url("../images/history.svg");
+  background-image: url("/static/truecoffee-ordering/images/history.svg");
 }
 
 .icn-history a {
@@ -607,7 +607,7 @@ b {
   margin-top: 6px;
   margin-right: 4px;
   position: relative;
-  background-image: url("../images/cart.svg");
+  background-image: url("/static/truecoffee-ordering/images/cart.svg");
 }
 
 .icn-cart a {
@@ -636,7 +636,7 @@ b {
   height: 24px;
   margin-top: 6px;
   position: relative;
-  background-image: url("../images/add-cart.svg");
+  background-image: url("/static/truecoffee-ordering/images/add-cart.svg");
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -756,7 +756,7 @@ b {
   overflow: hidden;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
-  background-image: url("../images/product-thumb-bg.jpg");
+  background-image: url("/static/truecoffee-ordering/images/product-thumb-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -783,7 +783,7 @@ b {
 }
 
 .item-list .paper:hover .icn-add-cart {
-  background-image: url("../images/add-cart-hover.svg");
+  background-image: url("/static/truecoffee-ordering/images/add-cart-hover.svg");
 }
 
 .item-list .paper > a {
@@ -845,7 +845,7 @@ b {
 
 .cart-bar {
   height: 55px;
-  background-image: url("../images/cart-bar.svg");
+  background-image: url("/static/truecoffee-ordering/images/cart-bar.svg");
   z-index: 999;
 }
 
@@ -951,7 +951,7 @@ b {
   overflow: hidden;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
-  background-image: url("../images/product-thumb-bg.jpg");
+  background-image: url("/static/truecoffee-ordering/images/product-thumb-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -963,7 +963,7 @@ b {
   right: -24px;
   width: 48px;
   height: 50px;
-  background-image: url("../images/close.svg");
+  background-image: url("/static/truecoffee-ordering/images/close.svg");
   background-size: 32px 47px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1046,13 +1046,13 @@ b {
           appearance: none;
   background: none;
   border: none;
-  background-image: url("../images/minus-active.svg");
+  background-image: url("/static/truecoffee-ordering/images/minus-active.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .product-quantity .icn-minus.disable {
-  background-image: url("../images/minus.svg");
+  background-image: url("/static/truecoffee-ordering/images/minus.svg");
 }
 
 .product-quantity .icn-plus {
@@ -1063,12 +1063,12 @@ b {
           appearance: none;
   background: none;
   border: none;
-  background-image: url("../images/plus-active.svg");
+  background-image: url("/static/truecoffee-ordering/images/plus-active.svg");
   background-size: contain;
 }
 
 .product-quantity .icn-plus.disable {
-  background-image: url("../images/plus.svg");
+  background-image: url("/static/truecoffee-ordering/images/plus.svg");
 }
 
 .cart-list ul, .cart-list li {
@@ -1227,7 +1227,7 @@ b {
 }
 
 body.receipt {
-  background-image: url("../images/bg-white.png");
+  background-image: url("/static/truecoffee-ordering/images/bg-white.png");
   background-size: 1408px 1083px;
 }
 
@@ -1270,7 +1270,7 @@ body.receipt {
   position: absolute;
   width: 100%;
   height: 5px;
-  background-image: url("../images/receipt-wave.svg");
+  background-image: url("/static/truecoffee-ordering/images/receipt-wave.svg");
   background-repeat: repeat-x;
   content: '';
 }
@@ -1331,7 +1331,7 @@ body.receipt {
 }
 
 .splash {
-  background-image: url("../images/bg-red.png");
+  background-image: url("/static/truecoffee-ordering/images/bg-red.png");
   background-size: 1408px 1083px;
 }
 
@@ -1369,7 +1369,7 @@ body.receipt {
 }
 
 .order-history-list .history-list .paper-list {
-  background-image: url("../images/next.svg");
+  background-image: url("/static/truecoffee-ordering/images/next.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: right 8px center;
@@ -1490,7 +1490,7 @@ body.receipt {
 }
 
 #fabbtt:before {
-  content: url("../images/arrows-up.svg");
+  content: url("/static/truecoffee-ordering/images/arrows-up.svg");
   position: fixed;
   top: 0px;
   left: 16px;
