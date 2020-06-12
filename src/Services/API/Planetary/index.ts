@@ -20,8 +20,8 @@ export const PlanetaryService = {
             );
         } catch (error) {
             response = {
-                copyright: "aaa",
-                date: "",
+                copyright: "Pankod",
+                date: "2019-05-23",
                 explanation: "",
                 hdurl: "",
                 service_version: "",

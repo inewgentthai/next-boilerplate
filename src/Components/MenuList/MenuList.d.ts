@@ -1,7 +1,7 @@
-declare namespace IItemList {
+declare namespace IMenuList {
     export interface IProps {
         menus: Array;
     }
 }
 
-export { IItemList };
+export { IMenuList };

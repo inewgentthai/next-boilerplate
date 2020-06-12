@@ -13,7 +13,7 @@ import { Layout } from "@Components/Themes/Truecoffee";
 
 // #region Interface Imports
 import { ReduxNextPageContext, IMenu } from "@Interfaces";
-import { ItemList } from "@Components";
+import { MenuList } from "@Components";
 // #endregion Interface Imports
 
 export const Menu: NextPage<
@@ -25,7 +25,7 @@ export const Menu: NextPage<
     
     return (
         <Layout title={ t("common:True Coffee Title") }>
-            <ItemList menus={ menu }/>
+            <MenuList menus={ menu }/>
         </Layout>
     );
 };

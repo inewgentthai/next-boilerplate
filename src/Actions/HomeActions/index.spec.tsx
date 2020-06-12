@@ -62,7 +62,6 @@ describe("Home action tests", () => {
                         date: "2019-05-23",
                         explanation: "",
                         hdurl: "",
-                        media_type: "",
                         service_version: "",
                         title: "",
                         url: "",

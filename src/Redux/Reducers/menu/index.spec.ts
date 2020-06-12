@@ -9,6 +9,9 @@ describe("Menu reducer", () => {
         expect(MenuReducer(
             undefined,
             {} as IAction<IMenu.IStateProps>)
-        ).toEqual({});
+        ).toEqual({ 
+            data: [],
+            loaded: false
+        });
     });
 });

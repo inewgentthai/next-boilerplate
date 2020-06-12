@@ -1,4 +1,4 @@
-// #region Local Imports
+// // #region Local Imports
 import { PlanetaryService } from "@Services";
 // #endregion Local Imports
 
@@ -14,6 +14,6 @@ describe("Planetary Service tests", () => {
         const result = await PlanetaryService.GetPlanetImage({
             params: { hd: false },
         });
-        expect(result.copyright).toEqual("");
+        expect(result.copyright).toEqual("Pankod");
     });
 });
