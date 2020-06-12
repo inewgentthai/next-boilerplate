@@ -1,7 +1,7 @@
-declare namespace ILayout {
+declare namespace IHomeLayout {
     export interface IProps {
         title: string;
     }
 }
 
-export { ILayout };
+export { IHomeLayout };

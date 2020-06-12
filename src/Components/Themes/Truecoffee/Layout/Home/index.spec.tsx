@@ -4,12 +4,12 @@ import * as React from "react";
 
 // #region Local Imports
 import { render } from "@Test/utils";
-import { Layout } from "@Components/Themes/Truecoffee";
+import { HomeLayout } from "@Components/Themes/Truecoffee/Layout";
 // #endregion Local Imports
 
-describe("Layout", () => {
+describe("HomeLayout", () => {
     it("should match snapshot", () => {
-        const { container } = render(<Layout title='Test'>Test</Layout>);
+        const { container } = render(<HomeLayout title='Test'>Test</HomeLayout>);
 
         expect(container).toMatchSnapshot();
     });

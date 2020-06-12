@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { withTranslation } from "@Server/i18n";
 import { IStore } from "@Redux/IStore";
 import { MenuActions } from "@Actions";
-import { Layout } from "@Components/Themes/Truecoffee";
+import { DefaultLayout } from "@Components/Themes/Truecoffee/Layout";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -24,9 +24,9 @@ export const Menu: NextPage<
     const dispatch = useDispatch();
     
     return (
-        <Layout title={ t("common:True Coffee Title") }>
+        <DefaultLayout title={ t("common:True Coffee Title") }>
             <MenuList menus={ menu }/>
-        </Layout>
+        </DefaultLayout>
     );
 };
 
