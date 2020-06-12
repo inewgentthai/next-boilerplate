@@ -653,7 +653,7 @@ b {
 
 .categories .capsule {
   background-color: #e8e8e8;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 0.4px;
   line-height: 32px;
   border-radius: 200px;
@@ -702,7 +702,7 @@ b {
 
 .cat-found {
   color: #9B9B9B;
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 8px;
   letter-spacing: 0.5px;
 }
@@ -809,7 +809,7 @@ b {
   text-align: center;
   font-family: "ozone_medium";
   margin-top: -2px;
-  font-size: 19px;
+  font-size: 15px;
   height: 35px;
   line-height: 18px;
   color: #231f20;
