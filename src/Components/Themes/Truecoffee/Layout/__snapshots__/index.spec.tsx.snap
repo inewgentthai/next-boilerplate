@@ -300,11 +300,12 @@ exports[`Layout should match snapshot 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="footer"
+    <button
+      id="fabbtt"
+      title="Go to top"
     >
-      Footer
-    </div>
+      Back to Top
+    </button>
   </div>
 </div>
 `;
