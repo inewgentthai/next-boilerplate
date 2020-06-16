@@ -11,7 +11,9 @@ describe("Menu reducer", () => {
             {} as IAction<IMenu.IStateProps>)
         ).toEqual({ 
             data: [],
-            loaded: false
+            content: [],
+            loading: false,
+            modal: false
         });
     });
 });

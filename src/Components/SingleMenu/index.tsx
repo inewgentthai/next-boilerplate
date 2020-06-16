@@ -1,35 +1,33 @@
 // #region Global Imports
 import * as React from "react";
+import { useDispatch } from "react-redux";
 // #endregion Global Imports
 
 // #region Local Imports
 import { ISingleMenu } from "./SingleMenu";
 import { MenuActions } from "@Actions";
-import {
-  ApodButton,
-} from "@Styled/Home";
 // #endregion Local Imports
 
 const SingleMenu: React.FunctionComponent<ISingleMenu.IProps> = (
   menu
 ): JSX.Element => {
     const { menu: { id, image_name, name, inventories} } = menu;
+    const dispatch = useDispatch();
 
-    const handleShow = (menu) => {console.log('xxx', menu);
-      // const {setMainModal} = this.props
-      // document.body.classList.add('modal-open')
-      // setMainModal({
-      //   show: true,
-      //   content: {
-      //     menu: menu
-      //   }
-      // })
+    const handleShow = (show, menu) => {
+      document.body.classList.add('modal-open')
+      dispatch(
+        MenuActions.Map({
+          modal: show,
+          content: menu.menu
+        })
+      );
     }
 
     return (
       <div className="item" key={ id }>
         <div className="paper">
-          <a href="#" data-toggle="modal" data-target="#itemModal" data-backdrop="static">
+          <a href="#" data-toggle="modal" data-target="#itemModal" data-backdrop="static" onClick={() => { handleShow(true, menu) }}>
             <div className="product-thumb">
               <div className="product-size">{ inventories[0].name.th }</div>
               <img 
@@ -42,12 +40,7 @@ const SingleMenu: React.FunctionComponent<ISingleMenu.IProps> = (
               <div className="product-name">{ name.th } - { inventories[0].name.th }</div>
               <div className="product-price-add">
                 <div className="product-price">฿{ parseFloat(inventories[0].price).toFixed(2) }</div>
-                <div className="product-add icn-add-cart"/>
-                {/* <ApodButton
-                  onClick={() => {
-                      alert('aaa');
-                  }}
-              ></ApodButton> */}
+                <div className="product-add icn-add-cart" onClick={() => { handleShow(true, menu) }}/>
               </div>
             </div>
           </a>

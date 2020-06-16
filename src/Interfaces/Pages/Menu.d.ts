@@ -11,7 +11,9 @@ declare namespace IMenu {
 
     export interface IStateProps {
         data: Array;
-        loaded: boolean;
+        content: Array;
+        loading: boolean;
+        modal: boolean;
     }
 
     namespace Actions {

@@ -8,7 +8,9 @@ import { IAction, IMenu } from "@Interfaces";
 
 const INITIAL_STATE: IMenu.IStateProps = { 
     data: [],
-    loaded: false
+    content: [],
+    loading: false,
+    modal: false
 };
 
 type IMapPayload = IMenu.Actions.IMapPayload;

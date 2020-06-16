@@ -22,9 +22,10 @@ export const Menu: NextPage<
 > = ({ t, i18n }) => {
     const menu = useSelector((state: IStore) => state.menu);
     const dispatch = useDispatch();
+    const bodyClass = menu.modal ? 'modal-open' : ''
     
     return (
-        <DefaultLayout title={ t("common:True Coffee Title") }>
+        <DefaultLayout menus={ menu } title={ t("common:True Coffee Title") }>
             <MenuList menus={ menu }/>
         </DefaultLayout>
     );

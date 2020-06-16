@@ -31,6 +31,7 @@ export const MenuActions = {
         dispatch({
             payload: {
                 data: result.data,
+                loading: true,
             },
             type: ActionConsts.Menu.SetReducer,
         });
