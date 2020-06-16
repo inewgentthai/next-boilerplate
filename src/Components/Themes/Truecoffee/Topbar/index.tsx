@@ -4,6 +4,7 @@ import * as React from "react";
 
 // #region Local Imports
 import { ITopbar } from "./Topbar";
+import Link from "next/link";
 // #endregion Local Imports
 
 const Topbar: React.FunctionComponent<ITopbar.IProps> = (): JSX.Element => {
@@ -16,7 +17,11 @@ const Topbar: React.FunctionComponent<ITopbar.IProps> = (): JSX.Element => {
                 <a href="order-history.html" data-toggle="tooltip" data-placement="right" title="Order History" /></div>
             </div>
             <div className="col-6 text-center">
-              <a href="index.html"><img src="static/truecoffee-ordering/images/logo.svg" /></a>
+              <Link href=".">
+                <a>
+                  <img src="static/truecoffee-ordering/images/logo.svg" />
+                </a>
+              </Link>
             </div>
             <div className="col text-right">
               <div className="icn-cart float-right">

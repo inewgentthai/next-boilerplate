@@ -8,7 +8,7 @@ import { IModal } from "./Modal";
 
 const Modal: React.FunctionComponent<IModal.IProps> = (): JSX.Element => {
     return (
-      <div className="modal fade" id="itemModal" tabIndex={-1} role="dialog" aria-labelledby="itemModal" aria-hidden="true">
+      <div className="modal fade show" id="itemModal" tabIndex={-1} role="dialog" aria-labelledby="itemModal" aria-hidden="false">
         <div className="item-modal modal-dialog" role="document">
           <div className="modal-content">
             <div className="paper">

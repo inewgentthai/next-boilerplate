@@ -1,6 +1,6 @@
 declare namespace IHeader {
     export interface IProps {
-        text: string;
+        title: string;
     }
 }
 

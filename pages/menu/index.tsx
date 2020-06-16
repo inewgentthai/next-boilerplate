@@ -35,7 +35,7 @@ Menu.getInitialProps = async (
 ): Promise<IMenu.InitialProps> => {
     await ctx.store.dispatch(
         MenuActions.GetMenu({
-            params: { hd: true },
+            params: { outlet_id: 230 },
         })
     );
     return { namespacesRequired: ["common"] };

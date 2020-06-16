@@ -15,7 +15,7 @@ export const MenuService = {
         try {
             response = await Http.Request<MenuModel.GetMenuResponse>(
                 "GET",
-                "/472e5fcb-c786-4bf1-81d3-00cfd104c0c5",
+                "/v1/products",
                 payload.params
             );
         } catch (error) {

@@ -12,10 +12,12 @@ import { Header } from "../../Header";
 import { Footer } from "../../Footer";
 // #endregion Local Imports
 
-const DefaultLayout: React.FunctionComponent<IDefaultLayout.IProps> = ({ children, title = 'True Coffee : Smart Ordering' }): JSX.Element => {
+const DefaultLayout: React.FunctionComponent<IDefaultLayout.IProps> = (
+  { children, title = 'True Coffee : Smart Ordering' }
+  ): JSX.Element => {
     return (
      <div>
-        <Header text={ title }/>
+        <Header title={ title }/>
         <div className="loading-icon" />
         <div className="wrapper">
           <Topbar />

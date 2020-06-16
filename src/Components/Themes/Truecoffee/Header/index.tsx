@@ -19,12 +19,12 @@ import { IHeader } from "./Header";
 const Header: React.FunctionComponent<IHeader.IProps> = (
     props
 ): JSX.Element => {
-    const { text } = props;
+    const { title } = props;
 
     return (
         <Head>
-          <title>{ text } </title>
-          <meta property="og:title" content={ text } key="title" />
+          <title>{ title } </title>
+          <meta property="og:title" content={ title } key="title" />
         </Head>
     );
 };

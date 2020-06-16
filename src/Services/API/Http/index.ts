@@ -9,7 +9,7 @@ import { HttpModel } from "@Interfaces";
 // #endregion Interface Imports
 
 const {
-    publicRuntimeConfig: { API_KEY, API_URL },
+    publicRuntimeConfig: { API_KEY, API_URL, X_API_AUTH, X_CLIENT_ID },
 } = getConfig();
 
 const BaseUrl = `${API_URL}`;
@@ -23,14 +23,16 @@ export const Http = {
     ): Promise<A> => {
         return new Promise((resolve, reject) => {
             const query = params
-                ? `?${stringify({ ...params, api_key: API_KEY })}`
+                ? `?${stringify({ ...params })}`
                 : "";
-                
+
             fetch(`${BaseUrl}${url}${query}`, {
                 body: JSON.stringify(payload),
                 cache: "no-cache",
                 headers: {
                     "content-type": "application/json",
+                    "x-api-auth": `${X_API_AUTH}`,
+                    "x-client-id": `${X_CLIENT_ID}`,
                 },
                 method: `${methodType}`,
             })

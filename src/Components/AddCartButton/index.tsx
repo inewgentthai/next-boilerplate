@@ -4,10 +4,6 @@ import * as React from "react";
 
 // #region Local Imports
 import { ISingleMenu } from "./SingleMenu";
-import { MenuActions } from "@Actions";
-import {
-  ApodButton,
-} from "@Styled/Home";
 // #endregion Local Imports
 
 const SingleMenu: React.FunctionComponent<ISingleMenu.IProps> = (
@@ -42,12 +38,7 @@ const SingleMenu: React.FunctionComponent<ISingleMenu.IProps> = (
               <div className="product-name">{ name.th } - { inventories[0].name.th }</div>
               <div className="product-price-add">
                 <div className="product-price">฿{ parseFloat(inventories[0].price).toFixed(2) }</div>
-                <div className="product-add icn-add-cart"/>
-                {/* <ApodButton
-                  onClick={() => {
-                      alert('aaa');
-                  }}
-              ></ApodButton> */}
+                <div className="product-add icn-add-cart" onClick={ handleShow(menu) }/>
               </div>
             </div>
           </a>
